@@ -7,7 +7,7 @@ module.exports = {
   deploy : {
     server : {
       user : 'root',
-      host : '188.166.137.69',
+      host : '157.245.44.125',
       ref  : 'origin/master',
       repo : 'https://github.com/DAVE4547/express-test.git',
       path : '/projects/pm2',
