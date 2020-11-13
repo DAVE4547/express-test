@@ -3,19 +3,19 @@ const app = express()
 
 app.use(express.json())
 
-    app.get('/twitch', (req, res) => {
+    app.get('/test', (req, res) => {
 
         console.log(req.query['hub.challenge'])
-        res.status('200').type('text/plain').send(req.query['hub.challenge'])
+        res.status('200').type('text/plain').send('hello world')
 
     })
 
-    app.post('/twitch', (req, res) => {
+    app.post('/post', (req, res) => {
         res.status('200')
         console.log(req.body)
     })
 
 
-app.listen(3001, () => {
-    console.log("Listening on port 3001...")
+app.listen(3000, () => {
+    console.log("Listening on port 3000...")
 })
